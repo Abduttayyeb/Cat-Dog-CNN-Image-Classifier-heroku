@@ -2,7 +2,7 @@ Flask==1.1.1
 MarkupSafe==1.1.1
 numpy>=1.9.2
 Click==7.0
-gunicorn==19.9.0
+waitress==1.4.4
 h5py==2.10.0
 itsdangerous==1.1.0
 Jinja2==2.10.3

@@ -1,3 +1,4 @@
+import requests
 import sys
 import os
 import glob
@@ -56,4 +57,6 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+     app.debug = False
+     port = int(os.environ.get('PORT', 33507))
+     waitress.serve(app, port=port)
