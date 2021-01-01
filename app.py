@@ -57,6 +57,4 @@ def upload():
 
 
 if __name__ == '__main__':
-     app.debug = False
-     port = int(os.environ.get('PORT', 33507))
-     waitress.serve(app, port=port)
+    app.run(debug=True,use_reloader=False)
