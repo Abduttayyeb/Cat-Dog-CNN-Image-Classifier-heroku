@@ -7,4 +7,4 @@ numpy>=1.9.2
 pandas>=0.19
 Keras
 h5py>=2.10.0
-tensorflow==2.0.0
+tensorflow==1.7.0
