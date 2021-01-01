@@ -56,4 +56,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(port=1204,debug=True)
+    app.run(debug=True)
