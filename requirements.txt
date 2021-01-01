@@ -11,4 +11,4 @@ matplotlib>=1.4.3
 pandas>=0.19
 Keras
 h5py
-request
+tensorflow
