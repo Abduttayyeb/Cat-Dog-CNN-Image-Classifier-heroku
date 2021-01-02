@@ -11,19 +11,12 @@ from werkzeug.utils import secure_filename
 
 
 app = Flask(__name__)
-model = load_model("DVC.h5")
-
-model.compile(loss='binary_crossentropy',
-              optimizer='adam',
-              metrics=['accuracy'])
-
+model = load_model("DVC.h5",compile=True)
 # model._make_predict_function() 
 
 
-
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
-    # Main page
     return render_template('index.html')
 
 
