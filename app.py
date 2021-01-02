@@ -11,7 +11,7 @@ from werkzeug.utils import secure_filename
 
 
 app = Flask(__name__)
-model = load_model("DVC.h5",compile=True)
+model = load_model("DVC2.h5",compile=True)
 # model._make_predict_function() 
 
 
@@ -25,6 +25,7 @@ def upload():
 	if request.method == 'POST':
         # Get the file from post request
 		f = request.files['file']
+
 	    # Save the file to .uploads
 		basepath = os.path.dirname(__file__)
 		file_path = os.path.join(
@@ -50,4 +51,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,use_reloader=False)
+    app.run(debug=False)
