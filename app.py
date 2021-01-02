@@ -36,6 +36,7 @@ def upload():
 		img = image.load_img(file_path, target_size=(64, 64))
 		# img = cv2.resize(img,(64,64))
 		img = np.reshape(img,[1,64,64,3])
+		image = tf.cast(img, tf.float32)
 		classes = (model.predict(img) > 0.5).astype("int32")
 
 		# Process your result for human
