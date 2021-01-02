@@ -2,4 +2,4 @@
 CNN Model 
 
 
-Link https://cdvision.herokuapp.com/api/image
+Link https://cdvision.herokuapp.com
