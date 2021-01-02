@@ -1,6 +1,6 @@
 DEMO: https://cdvision.herokuapp.com
 
-# Deployed Image-Classification Flask-Hiroku
+# Deployed Image-Classification Flask-Heroku
 
 
 CNN image classifications takes an input image, processes it and classifies it under certain categories (Eg., Dog, Cat).
