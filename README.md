@@ -1,5 +1,5 @@
-# Pre-trained-Image-Classification--Flask-Hiroku
-Pre-trained deep learning model with flask server. Hosted on Hiroku
+# Image-Classification Using Flask-Hiroku
+CNN Model 
 
 
-Link https://practice-image-classify.herokuapp.com/
+Link https://cdvision.herokuapp.com/api/image
