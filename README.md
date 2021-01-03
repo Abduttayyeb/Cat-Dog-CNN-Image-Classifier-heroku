@@ -1,5 +1,8 @@
-# Pre-trained-Image-Classification--Flask-Hiroku
-Pre-trained deep learning model with flask server. Hosted on Hiroku
+DEMO: https://cdvision.herokuapp.com
+
+# Deployed Image-Classification Flask-Heroku
 
 
-Link https://practice-image-classify.herokuapp.com/
+CNN image classifications takes an input image, processes it and classifies it under certain categories (Eg., Dog, Cat).
+
+![alt text](https://www.upgrad.com/blog/wp-content/uploads/2020/12/1-4.png)

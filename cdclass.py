@@ -21,6 +21,8 @@ from werkzeug.utils import secure_filename
 from PIL import Image, ImageFile
 from io import BytesIO
 from tensorflow.keras.preprocessing import image
+from flask import send_from_directory
+
 
 
 # In[3]:
@@ -48,6 +50,14 @@ model = load_model('DVC2.h5',compile=True)
 @app.route('/')
 def index():
     return render_template('ImageML.html')
+
+
+# @app.route('/favicon.ico')
+# def favicon():
+#     return send_from_directory(os.path.join(app.root_path, 'static'),
+#                                'favicon.ico', mimetype='image/png')
+
+
 
 @app.route('/api/image', methods=['POST'])
 def upload_image():
